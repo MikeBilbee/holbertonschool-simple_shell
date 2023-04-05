@@ -1,0 +1,16 @@
+.\" Manpage for simple_shell.
+.TH man 8 "06 April 2023" "1.0" "simple_shell man page"
+.SH NAME
+simple_shell \- Creates a shell for Unix
+.SH SYNOPSIS
+place holder
+.SH DESCRIPTION
+place holder
+.SH OPTIONS
+place holder
+.SH SEE ALSO
+place holder
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Karis Richardson Mike Bilbee
