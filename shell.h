@@ -19,4 +19,9 @@ typedef struct builfunc
 	int (*func)(char *argv[], char **env);
 } builfunc_t;
 
+int shell(void);
+char *_get_line();
+int split_line(char *line, char *argv[]);
+int check_builtin_func(char *argv[], char **env);
+
 #endif /* _SHELL_H_ */
