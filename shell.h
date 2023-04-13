@@ -12,7 +12,7 @@ extern char **environ;
 
 int shell(void);
 char *_get_line();
-int split_line(char *line, char *argv[]);
+int split(char *line, char *argv[]);
 int check_builtin_func(char *argv[], char **env);
 int _execve(char *path, char *argv[], char **envp);
 int _strlen(char *s);
@@ -20,18 +20,18 @@ char *search_path(char *command);
 char *_getenv(char *name);
 
 /**
- * struct builfunc - Structure of builtin functions
+ * struct built - Structure of builtin functions
  * @name: command to match
  * @func: Name of the function
  */
-typedef struct builfunc
+typedef struct built
 {
 	char *name;
 	int (*func)(char *argv[], char **env);
-} builfunc_t;
+} built_t;
 
-int shell_cd(char *argv[], char **env);
-int shell_exit(char *argv[], char **env);
-int shell_env(char *argv[], char **env);
+int _cd(char *argv[], char **env);
+int _exit(char *argv[], char **env);
+int _env(char *argv[], char **env);
 
 #endif /* _SHELL_H_ */
