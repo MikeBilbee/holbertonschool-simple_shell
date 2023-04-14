@@ -9,15 +9,15 @@
  * Return: int, number of tokens, -1 if none
  */
 
-int split(char *line, char *argv[])
+int split(char *input, char *argv[])
 {
 	int i = 0;
 	char *arg;
 
-	if (line == NULL)
+	if (input == NULL)
 	{ return (-1); }
 
-	arg = strtok(line, " \t\n\r");
+	arg = strtok(input, " \t\n\r");
 
 	while (arg != NULL)
 	{
