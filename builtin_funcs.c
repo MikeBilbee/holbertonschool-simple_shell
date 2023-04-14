@@ -54,17 +54,18 @@ int _env(char *argv[], char **env)
 
 
 /**
- * _exit - exits the shell
+ * _stop - frees argv[] and calls the function that actually exits
  *
  * @argv: str array, unused
  * @env: environment var, unused
  *
- * Return: int, but not really (never returns bc it exits)
+ * Return: int, always 0
  */
-int _exit(char *argv[], char **env)
+int _stop(char *argv[], char **env)
 {
 	(void) env;
 
 	free(argv[0]);
 	exit(0);
+	return (0);
 }

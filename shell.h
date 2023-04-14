@@ -31,7 +31,7 @@ typedef struct built
 } built_t;
 
 int _cd(char *argv[], char **env);
-int _exit(char *argv[], char **env);
 int _env(char *argv[], char **env);
+int _stop(char *argv[], char **env);
 
 #endif /* _SHELL_H_ */

@@ -16,7 +16,7 @@ int check_builtin_command(char *argv[], char **env)
 	built_t f[] = {
 		{ "cd", _cd },
 		{ "env", _env },
-		{ "exit", _exit },
+		{ "exit", _stop },
 		{ NULL, NULL }
 	};
 
