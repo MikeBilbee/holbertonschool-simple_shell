@@ -13,7 +13,7 @@ extern char **environ;
 int shell(void);
 char *_get_line();
 int split(char *input, char *argv[]);
-int check_builtin_func(char *argv[], char **env);
+int check_builtin_command(char *argv[], char **env);
 int _execve(char *path, char *argv[], char **envp);
 int _strlen(char *s);
 char *search_path(char *command);

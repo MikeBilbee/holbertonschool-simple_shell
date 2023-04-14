@@ -11,9 +11,9 @@
  */
 int _cd(char *argv[], char **env)
 {
-	(void) env;
-
 	char cwd[128];
+
+	(void) env;
 
 	if (argv[1][0] != '/')
 	{
@@ -41,6 +41,8 @@ int _env(char *argv[], char **env)
 {
 	int i = 0;
 
+	(void) argv;
+
 	while (env[i] != NULL)
 	{
 		printf("%s\n", env[i]);
@@ -59,8 +61,10 @@ int _env(char *argv[], char **env)
  *
  * Return: int, but not really (never returns bc it exits)
  */
-int _exit(char **argv[], char **env)
+int _exit(char *argv[], char **env)
 {
+	(void) env;
+
 	free(argv[0]);
 	exit(0);
 }
