@@ -1,16 +1,40 @@
 .\" Manpage for simple_shell.
 .TH man 8 "06 April 2023" "1.0" "simple_shell man page"
 .SH NAME
-simple_shell \- Creates a shell for Unix
+.B simple_shell
+
+- Creates a shell for Unix
+
 .SH SYNOPSIS
-place holder
+Takes input from user, separates it into its arguments, processes the input and then executes any correct command that is found
+
 .SH DESCRIPTION
-place holder
-.SH OPTIONS
-place holder
-.SH SEE ALSO
-place holder
+
+A standard command interpreter for the system
+
+.SH EXAMPLES
+Below an example of interactive mode:
+
+.RS +4
+$ ./hsh
+.RE
+.RS +4
+($) /bin/ls
+.RE
+.RS +4
+hsh main.c shell.c
+.RE
+.RS +4
+($)
+.RE
+.RS +4
+($) exit
+.RE
+.RS +4
+$
+
 .SH BUGS
 No known bugs.
-.SH AUTHOR
+
+.SH AUTHORS
 Karis Richardson Mike Bilbee
