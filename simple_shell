@@ -1,16 +1,33 @@
 .\" Manpage for simple_shell.
-.TH man 8 "06 April 2023" "1.0" "simple_shell man page"
+.TH man 8 "18 April 2023" "1.0" "simple_shell man page"
 .SH NAME
-.B simple_shell
-
-- Creates a shell for Unix
+.B hsh / simple_shell
 
 .SH SYNOPSIS
+.B hsh
 Takes input from user, separates it into its arguments, processes the input and then executes any correct command that is found
 
 .SH DESCRIPTION
 
 A standard command interpreter for the system
+
+.SH OPTIONS
+once all files are complied, run:
+.br
+$ ./hsh
+
+In the command line interpretor basic linux commands can be executed. These commands can be executed with built in options.
+
+.B env -
+Print the current environment.
+
+To exit the program, run:
+.br
+$ exit
+
+.SH FILES
+.TP
+.I /holbertonschool-simple_shell/hsh
 
 .SH EXAMPLES
 Below an example of interactive mode:
@@ -19,16 +36,16 @@ Below an example of interactive mode:
 $ ./hsh
 .RE
 .RS +4
-($) /bin/ls
+$ /bin/ls
 .RE
 .RS +4
 hsh main.c shell.c
 .RE
 .RS +4
-($)
+$
 .RE
 .RS +4
-($) exit
+$ exit
 .RE
 .RS +4
 $
