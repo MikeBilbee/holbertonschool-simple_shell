@@ -6,24 +6,24 @@
  */
 char *_get_line()
 {
-char *line = NULL;
-size_t buff = 0;
-int check;
+	char *line = NULL;
+	size_t buff = 0;
+	int check;
 
-if (isatty(STDIN_FILENO) == 1)
-{
-printf("$  ");
+	if (isatty(STDIN_FILENO) == 1)
+	{ printf("$  "); }
+
+	check = getline(&line, &buff, stdin);
+
+	if (check == -1)
+	{
+		free(line);
+		return (NULL);
+	}
+
+	return (line);
 }
 
-check = getline(&line, &buff, stdin);
-if (check == -1)
-{
-free(line);
-return (NULL);
-}
-return (line);
-
-}
 
 /**
  * _strlen - returns the length of a string
@@ -32,16 +32,13 @@ return (line);
  */
 int _strlen(char *s)
 {
-int c;
+	int c = 0;
 
-c = 0;
-if (*s != '\0')
-{
-c = 1 + _strlen(s + 1);
-return (c);
-}
-else
-{
-return (0);
-}
+	if (*s != '\0')
+	{
+		c = 1 + _strlen(s + 1);
+		return (c);
+	}
+	else
+	{ return (0); }
 }
