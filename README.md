@@ -17,3 +17,9 @@ This is a very basic shell, a program that takes user input and interprets it fo
 | check_command.c| **check_builtin_command**: Checks and executes given function                                                   |
 | builtin_funcs.c| **_cd**: Changes directory / **_env**: Prints environment variables / **_stop**: Frees argv[] and calls function|
 | exec.c         | **_execve**: Executes another program/**search_path** Finds a string in the PATH                                |
+
+Per the instructions of the project, please see the man page for more details on use 
+
+We really enjoyed the process of creating this shell. Even though it is very small and has low functionality, it gave us appreciation for how much there is behind the scenes of the terminal.
+
+![image](https://github.com/user-attachments/assets/dcbff4e3-ee33-4085-a94b-4bc68f5e67bc)
