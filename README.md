@@ -18,7 +18,8 @@ This is a very basic shell, a program that takes user input and interprets it fo
 | builtin_funcs.c| **_cd**: Changes directory / **_env**: Prints environment variables / **_stop**: Frees argv[] and calls function|
 | exec.c         | **_execve**: Executes another program/**search_path** Finds a string in the PATH                                |
 
-Per the instructions of the project, please see the man page for more details on use 
+Per the instructions of the project, please see the man page for more details on use:
+[simple_shell](https://github.com/MikeBilbee/holbertonschool-simple_shell/blob/main/simple_shell)
 
 We really enjoyed the process of creating this shell. Even though it is very small and has low functionality, it gave us appreciation for how much there is behind the scenes of the terminal.
 
